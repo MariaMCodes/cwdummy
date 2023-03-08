@@ -23,6 +23,13 @@ h4 {
 }
 
 
+/* Font */
+
+#brown-font {
+    color: #983222;
+}
+
+
 /* Acknowledgement home message */
 
 
@@ -48,17 +55,11 @@ h4 {
     color: black;
 }
 
-.topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-}
 
-
-/* Navigation bar - bottom */
-
+/* Navigation bar - bottom 
 .navbar-left a #logo:hover {
     background-color: #DF7A00;
-}
+} */
 
 
 /* #logo {
@@ -219,6 +220,24 @@ h4 {
     padding: 20px;
 }
 
+
+/* Header for services */
+
+.container .content2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 20px 20px 40px;
+}
+
+
+/* Service links for services */
+
+.serlinks a #hovlinks:hover {
+    filter: opacity(1);
+    transition: 0.3s;
+}
+
 .container .small-content {
     position: absolute;
     bottom: 0;
@@ -239,8 +258,8 @@ h4 {
     padding: 10px 30px;
 }
 
-#activities {
-    background-color: lightgrey;
+#grey-container {
+    background-color: #E9E8E8;
 }
 
 ul {
@@ -279,11 +298,12 @@ ul {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: lightgrey;
+    background-color: white;
     color: black;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #myBtn:hover {
