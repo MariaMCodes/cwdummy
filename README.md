@@ -1,2 +1,2 @@
-responsive parallax website
-CW Dummy
+CW Dummy website
+
