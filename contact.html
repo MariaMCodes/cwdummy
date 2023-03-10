@@ -125,39 +125,39 @@
     <div class="w3-content w3-container w3-left-align w3-padding-64" id="about">
         <h3>Drop us a line</h3>
         <br>
-        <p><strong>Phone:</strong></p>
+        <p style="color:#983222"><strong>Phone:</strong></p>
         <p>1800 000 292</p>
         <br>
-        <p><strong>Address:</strong></p>
-        <p style="color:lightgray">Geelong Clinic:</p>
+        <p style="color:#983222"><strong>Address:</strong></p>
+        <p class="w3-opacity">Geelong Clinic:</p>
         <p>Suite 5A, 170 Little Malop St</p>
         <p>Geelong VIC 3220</p>
         <br>
-        <p><strong>Email:</strong></p>
+        <p style="color:#983222"><strong>Email:</strong></p>
         <p>hello@cameronwellnesscentre.com.au</p>
         <br>
         <p><strong>Send us a message:</strong></p>
         <!-- Send a message form -->
-        <form class=" w3-container w3-padding-32" action="/action_page.php" target="_blank" id="grey-container">
+        <form class=" w3-container " style="padding: 8px 32px 32px 32px" action="/action_page.php" target="_blank" id="grey-container">
             <div class="w3-section">
-                <label>Name</label>
-                <input class="w3-input" style="width:100%;" type="text" required name="Name">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" style="width:100%;" required name="Name">
             </div>
             <div class="w3-section">
-                <label>Email</label>
-                <input class="w3-input" style="width:100%;" type="text" required name="Email">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" style="width:100%;" required name="Email">
             </div>
             <div class="w3-section">
                 <label>Message</label>
-                <input class="w3-input" style="width:100%; height:100px;" type="text" required name="Message">
+                <textarea id="message" name="message" style="height:100px; width: 100%;" required name="Message"></textarea>
             </div>
-            <button type="submit" class="w3-button w3-right" style="background-color: #DF7A00;">Send</button>
+            <button type="submit" class="cw-button" style="width:100%">Send</button>
         </form>
     </div>
 
 
     <!-- Add space below speech pathology -->
-    <div class="w3-content w3-row w3-padding-24">
+    <div class="w3-content w3-row w3-padding-32">
 
     </div>
 

@@ -127,13 +127,13 @@
         <br>
         <p>If you would like to have a yarn, contact us on:</p>
         <br>
-        <p><strong>Phone:</strong></p>
+        <p style="color:#983222"><strong>Phone:</strong></p>
         <p>1800 000 292</p>
         <br>
-        <p><strong>Email:</strong></p>
+        <p style="color:#983222"><strong>Email:</strong></p>
         <p>hello@cameronwellnesscentre.com.au</p>
         <br>
-        <p><strong>*denotes mandatory fields</strong></p>
+        <p><strong><i>*denotes mandatory fields</i></strong></p>
         <br>
         <!-- Accordion forms (Participant Form) -->
         <div class="w3-container ">
@@ -149,25 +149,25 @@
                         <input type="text" id="lname" name="lastname">
                     </div>
                 </div>
-                <div class="w3-row w3-padding-32">
-                    <div class="w3-half">
-                        <label for="phone">Phone Number (numbers only)*</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="w3-half">
-                        <label for="email">Email*</label>
-                        <input type="email" id="email" name="email">
-                    </div>
+                <div class="w3-row w3-padding-16">
+
+                    <label for="phone">Phone Number (numbers only)*</label>
+                    <input type="tel" id="phone" name="phone">
                 </div>
-                <div class="w3-row w3-padding-32">
+                <div class="w3-row w3-padding-16">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="w3-row w3-padding-16">
                     <label for="dob">Date of Birth</label>
                     <input type="date" id="dob" name="dob">
                 </div>
-                <div class="w3-row w3-padding-32">
+                <div class="w3-row w3-padding-16">
                     <label for="address">Address</label>
                     <input type="text" id="address" name="address">
                 </div>
-                <div class="w3-row w3-padding-32">
+                <div class="w3-row w3-padding-16">
                     <div class="w3-third">
                         <label for="suburb">Suburb</label>
                         <input type="text" id="suburb" name="Suburb">
@@ -189,13 +189,13 @@
                         <input type="number" id="postcode" name="postcode">
                     </div>
                 </div>
-                <div class="w3-row w3-padding-32">
+                <div class="w3-row w3-padding-16">
                     <label for="ndis">NDIS participant number (if applicable)</label>
                     <input type="number" id="ndis" name="ndis">
                 </div>
 
 
-                <div class="w3-row w3-padding-32">
+                <div class="w3-row w3-padding-16">
 
                     <input type="checkbox" name="ot" value="Occupational Therapy">
                     <label for="eci">Occupational Therapy</label><br>
@@ -208,11 +208,11 @@
                 </div>
 
 
-                <div class="w3-row w3-padding-32">
+                <div class="w3-row w3-padding-16">
                     <label for="req-service">Please provide a brief description of the support required (goals and needs of the participant including diagnosis if relevant)*</label>
                     <textarea id="req-service" name="req-service" style="height:200px; width: 100%;"></textarea>
                 </div>
-                <div class="w3-row w3-padding-32">
+                <div class="w3-row w3-padding-16">
                     <label for="vax-status">Are you fully vaccinated?</label>
                     <select id="vax-status" name="vax-status">
                             <option value="select">Please Select</option>
@@ -222,7 +222,7 @@
                             
                         </select>
                 </div>
-                <div class="w3-row w3-padding-32">
+                <div class="w3-row w3-padding-16">
                     <label for="hear-us">How did you hear about us?*</label>
                     <select id="hear-us" name="hear-us">
                             <option value="select">Please Select</option>
@@ -237,7 +237,7 @@
                             <option value="other">Other</option>
                         </select>
                 </div>
-                <div class="w3-row w3-padding-32">
+                <div class="w3-row w3-padding-16">
                     <input type="submit" value="Submit">
                 </div>
 
