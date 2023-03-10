@@ -51,8 +51,9 @@ h4 {
 }
 
 .topnav a:hover {
-    background-color: #DF7A00;
-    color: black;
+    /* background-color: #DF7A00;
+    color: black; */
+    text-decoration: underline;
 }
 
 
@@ -307,7 +308,8 @@ ul {
 }
 
 #myBtn:hover {
-    background-color: #DF7A00;
+    background-color: #B2B2B2;
+    color: white;
 }
 
 
@@ -383,4 +385,11 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #45a049;
+}
+
+
+/* Footer-top (hover) */
+
+.underhov a:hover {
+    text-decoration: underline;
 }
