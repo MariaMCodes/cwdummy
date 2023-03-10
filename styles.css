@@ -308,7 +308,8 @@ ul {
 }
 
 #myBtn:hover {
-    background-color: #B2B2B2;
+    background-color: #413F42;
+    opacity: 0.4;
     color: white;
 }
 
