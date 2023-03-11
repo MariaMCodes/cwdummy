@@ -133,48 +133,49 @@
         <p style="color:#983222"><strong>Email:</strong></p>
         <p>hello@cameronwellnesscentre.com.au</p>
         <br>
-        <p><strong><i>* denotes mandatory fields</i></strong></p>
         <br>
+
         <!-- Accordion forms (Participant Form) -->
-        <div class="w3-container ">
-            <button class="accordion">Participant Form</button>
-            <form class="panel " action="/action_page.php" method="get">
-                <div class="w3-row w3-padding-16">
-                    <div class="w3-half">
-                        <label for="fname">First Name*</label>
-                        <input type="text" id="fname" name="firstname">
-                    </div>
-                    <div class="w3-half">
-                        <label for="lname">Last Name*</label>
-                        <input type="text" id="lname" name="lastname">
-                    </div>
-                </div>
-                <div class="w3-row w3-padding-16">
 
-                    <label for="phone">Phone Number (numbers only)*</label>
-                    <input type="tel" id="phone" name="phone">
+        <button class="accordion">Participant Form</button>
+        <form class="panel " action="/action_page.php" method="get">
+            <p><strong><i>* denotes mandatory fields</i></strong></p>
+            <div class="w3-row w3-padding-16">
+                <div class="w3-half">
+                    <label for="fname">First Name*</label>
+                    <input type="text" id="fname" name="firstname">
                 </div>
-                <div class="w3-row w3-padding-16">
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email">
+                <div class="w3-half">
+                    <label for="lname">Last Name*</label>
+                    <input type="text" id="lname" name="lastname">
                 </div>
+            </div>
+            <div class="w3-row w3-padding-16">
 
-                <div class="w3-row w3-padding-16">
-                    <label for="dob">Date of Birth</label>
-                    <input type="date" id="dob" name="dob">
+                <label for="phone">Phone Number (numbers only)*</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="w3-row w3-padding-16">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="w3-row w3-padding-16">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="w3-row w3-padding-16">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div class="w3-row w3-padding-16">
+                <div class="w3-third">
+                    <label for="suburb">Suburb</label>
+                    <input type="text" id="suburb" name="Suburb">
                 </div>
-                <div class="w3-row w3-padding-16">
-                    <label for="address">Address</label>
-                    <input type="text" id="address" name="address">
-                </div>
-                <div class="w3-row w3-padding-16">
-                    <div class="w3-third">
-                        <label for="suburb">Suburb</label>
-                        <input type="text" id="suburb" name="Suburb">
-                    </div>
-                    <div class="w3-third">
-                        <label for="state">State</label>
-                        <select id="state" name="state">
+                <div class="w3-third">
+                    <label for="state">State</label>
+                    <select id="state" name="state">
                             <option value="select">Please Select</option>
                             <option value="nsw">New South Wales</option>
                             <option value="qld">Queensland</option>
@@ -183,48 +184,48 @@
                             <option value="vic">Victoria</option>
                             <option value="wa">Western Australia</option>
                         </select>
-                    </div>
-                    <div class="w3-third">
-                        <label for="postcode">Postcode</label>
-                        <input type="number" id="postcode" name="postcode">
-                    </div>
                 </div>
-                <div class="w3-row w3-padding-16">
-                    <label for="ndis">NDIS participant number (if applicable)</label>
-                    <input type="number" id="ndis" name="ndis">
+                <div class="w3-third">
+                    <label for="postcode">Postcode</label>
+                    <input type="number" id="postcode" name="postcode">
                 </div>
+            </div>
+            <div class="w3-row w3-padding-16">
+                <label for="ndis">NDIS participant number (if applicable)</label>
+                <input type="number" id="ndis" name="ndis">
+            </div>
 
 
-                <div class="w3-row w3-padding-16">
+            <div class="w3-row w3-padding-16">
 
-                    <input type="checkbox" name="ot" value="Occupational Therapy">
-                    <label for="eci">Occupational Therapy</label><br>
-                    <input type="checkbox" name="eci" value="Early Childhood Intervention">
-                    <label for="eci">Early Childhood Intervention</label><br>
-                    <input type="checkbox" name="sp" value="Speech Pathology">
-                    <label for="sp">Speech Pathology</label><br>
-                    <input type="checkbox" name="sp-lang" value="Speech and Language Assessment">
-                    <label for="sp-lang">Speech & Language Assessment</label>
-                </div>
+                <input type="checkbox" name="ot" value="Occupational Therapy">
+                <label for="eci">Occupational Therapy</label><br>
+                <input type="checkbox" name="eci" value="Early Childhood Intervention">
+                <label for="eci">Early Childhood Intervention</label><br>
+                <input type="checkbox" name="sp" value="Speech Pathology">
+                <label for="sp">Speech Pathology</label><br>
+                <input type="checkbox" name="sp-lang" value="Speech and Language Assessment">
+                <label for="sp-lang">Speech & Language Assessment</label>
+            </div>
 
 
-                <div class="w3-row w3-padding-16">
-                    <label for="req-service">Please provide a brief description of the support required (goals and needs of the participant including diagnosis if relevant)*</label>
-                    <textarea id="req-service" name="req-service" style="height:200px; width: 100%;"></textarea>
-                </div>
-                <div class="w3-row w3-padding-16">
-                    <label for="vax-status">Are you fully vaccinated?</label>
-                    <select id="vax-status" name="vax-status">
+            <div class="w3-row w3-padding-16">
+                <label for="req-service">Please provide a brief description of the support required (goals and needs of the participant including diagnosis if relevant)*</label>
+                <textarea id="req-service" name="req-service" style="height:200px; width: 100%;"></textarea>
+            </div>
+            <div class="w3-row w3-padding-16">
+                <label for="vax-status">Are you fully vaccinated?</label>
+                <select id="vax-status" name="vax-status">
                             <option value="select">Please Select</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                             <option value="exempt">Medical exemption</option>
                             
                         </select>
-                </div>
-                <div class="w3-row w3-padding-16">
-                    <label for="hear-us">How did you hear about us?*</label>
-                    <select id="hear-us" name="hear-us">
+            </div>
+            <div class="w3-row w3-padding-16">
+                <label for="hear-us">How did you hear about us?*</label>
+                <select id="hear-us" name="hear-us">
                             <option value="select">Please Select</option>
                             <option value="ad-online">Advertisement Online</option>
                             <option value="email-cwc">Email from Cameron Wellness Centre</option>
@@ -236,33 +237,33 @@
                             <option value="ndis-worker">NDIS planner or coordinator</option>
                             <option value="other">Other</option>
                         </select>
-                </div>
-                <div class="w3-row w3-padding-16">
-                    <input type="submit" value="Submit">
-                </div>
-
-            </form>
-
-
-
-            <button class="accordion">Referrer Form</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <button class="accordion">Carer Form</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="w3-row w3-padding-16">
+                <input type="submit" value="Submit">
             </div>
-            <button class="accordion">Support Coordinator Form</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <button class="accordion">Group Program</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
+
+        </form>
+
+
+
+        <button class="accordion">Referrer Form</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="accordion">Carer Form</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="accordion">Support Coordinator Form</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="accordion">Group Program</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </div>
+
 
 
     <!-- Add space below speech pathology -->
