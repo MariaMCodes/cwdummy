@@ -184,6 +184,77 @@
         </form>
     </div>
 
+    <!-- Container (Feedback/Complaint section) -->
+    <!-- Accordion form -->
+    <div class="w3-content w3-container w3-left-align w3-padding-32" id="about">
+
+        <button class="accordion">Feedback or Make a Complaint</button>
+        <form class="panel " action="/action_page.php" method="get">
+            <p><strong><i>* denotes mandatory fields</i></strong></p>
+            <div class="w3-row w3-padding-16">
+                <div class="w3-half">
+                    <label for="fname">First Name*</label>
+                    <input type="text" id="fname" name="firstname">
+                </div>
+                <div class="w3-half">
+                    <label for="lname">Last Name*</label>
+                    <input type="text" id="lname" name="lastname">
+                </div>
+            </div>
+            <div class="w3-row w3-padding-16">
+
+                <label for="phone">Phone Number (numbers only)*</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="w3-row w3-padding-16">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="w3-row w3-padding-16">
+                <div class="w3-third">
+                    <label for="suburb">Suburb</label>
+                    <input type="text" id="suburb" name="Suburb">
+                </div>
+                <div class="w3-third">
+                    <label for="state">State</label>
+                    <select id="state" name="state">
+                        <option value="select">Please Select</option>
+                        <option value="nsw">New South Wales</option>
+                        <option value="qld">Queensland</option>
+                        <option value="sa">South Australia</option>
+                        <option value="tas">Tasmania</option>
+                        <option value="vic">Victoria</option>
+                        <option value="wa">Western Australia</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="w3-row w3-padding-16">
+                <label for="cw-clinician">Cameron Wellness Centre clinician name (if known)</label>
+                <input type="text" id="cw-clinician" name="cw-clinician">
+            </div>
+
+
+
+
+
+            <div class="w3-row w3-padding-16">
+                <label for="comment">Provide details of your feedback or complaint*
+                </label>
+                <textarea id="comment" name="comment" style="height:200px; width: 100%;"></textarea>
+            </div>
+
+
+            <div class="w3-row w3-padding-16">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+
+    </div>
+
+
 
     <!-- Add space below speech pathology -->
     <div class="w3-content w3-row w3-padding-32">
@@ -330,6 +401,22 @@
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
+        }
+
+        // Accordion with symbols 
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "1000px";
+                }
+            });
         }
     </script>
 </body>
