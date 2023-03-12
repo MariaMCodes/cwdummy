@@ -132,14 +132,30 @@ h4 {
 } */
 
 
-/* Side bar on small screens */
+/* Hover for Side bar on small screens */
 
-#mySidebar {
-    text-transform: uppercase;
+
+/* Set up the hover */
+
+
+/* If you aren't using autoprefix, remember to prefix the gradient for other browsers */
+
+#mySidebar .w3-button {
+    background-image: linear-gradient(to right, #5E3032, #983222, #E37222, #DF7A00), linear-gradient(white, white);
+    background-size: 0 5px, auto;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: all .2s ease-out;
 }
 
-#mySidebar a .test2:hover {
-    background-color: #DF7A00;
+
+/* The following line makes the underline only as wide as the text */
+
+
+/* background-size: calc(100% - 2em) 5px, auto; */
+
+#mySidebar .w3-button:hover {
+    background-size: calc(100% - 2em) 5px, auto;
 }
 
 
