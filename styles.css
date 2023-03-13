@@ -23,17 +23,14 @@ h4 {
 }
 
 
-/* Font */
+/* CW brown font */
 
 #brown-font {
     color: #983222;
 }
 
 
-/* Acknowledgement home message */
-
-
-/* Navigation bar - top */
+/* Navigation bar #1 */
 
 .topnav {
     overflow: hidden;
@@ -57,8 +54,10 @@ h4 {
 }
 
 
-/* Navigation bar - bottom 
-.navbar-left a #logo:hover {
+/* Navigation bar #2 */
+
+
+/* .navbar-left a #logo:hover {
     background-color: #DF7A00;
 } */
 
@@ -67,6 +66,9 @@ h4 {
     width: 100%;
     height: auto;
 } */
+
+
+/* Links on RHS */
 
 .navbar-right {
     padding-top: 45px;
@@ -88,7 +90,7 @@ h4 {
 }
 
 
-/* ALTERNATE METHOD - Navigation bar - bottom 
+/* ALTERNATE METHOD - Navigation bar #2 
 
 @media screen and (max-width: 600px) {
     .topnav2 a:not(:first-child) {
@@ -135,10 +137,7 @@ h4 {
 /* Hover for Side bar on small screens */
 
 
-/* Set up the hover */
-
-
-/* If you aren't using autoprefix, remember to prefix the gradient for other browsers */
+/* Set up the hover - If you aren't using autoprefix, remember to prefix the gradient for other browsers */
 
 #mySidebar .w3-button {
     background-image: linear-gradient(to right, #5E3032, #983222, #E37222, #DF7A00), linear-gradient(white, white);
@@ -149,17 +148,20 @@ h4 {
 }
 
 
+/* The following line makes the underline for the whole button: background-size: 100% 5px, auto; */
+
+
 /* The following line makes the underline only as wide as the text */
-
-
-/* background-size: calc(100% - 2em) 5px, auto; */
 
 #mySidebar .w3-button:hover {
     background-size: calc(100% - 2em) 5px, auto;
 }
 
 
-/* Full height image header */
+/* Header with full-height image - Responsive Image with Transparent Text */
+
+
+/* Old version */
 
 .bgimg-1 {
     background-image: url("img/childcare.jpg");
@@ -183,45 +185,6 @@ h4 {
     padding: 20px;
     /* Some padding */
 }
-
-
-/*.bgimg-1 {
-    background-position: center;
-    background-size: cover;
-    background-image: url("img/bigbackground.svg");
-    /* min-height: 80%;
-    height: 500px;
-    opacity: 0.3;
-    background-repeat: no-repeat;
-}*/
-
-
-/* Button links in CW brown */
-
-.cw-button {
-    background-color: #983222;
-    opacity: 0.7;
-    border: none;
-    color: white;
-    padding: 10px 26px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.cw-button:hover {
-    background-color: #983222;
-    color: white;
-    border: none;
-    opacity: 1;
-}
-
-
-/* Home Header */
 
 .container {
     position: relative;
@@ -258,64 +221,6 @@ h4 {
     padding: 20px;
 }
 
-
-/* Header test */
-
-.bgimg-2 {
-    background-position: center;
-    background-size: cover;
-    background-image: url("img/childcare.jpg");
-    min-height: 100%;
-}
-
-.ndis-test {
-    height: 120px;
-    width: 120px;
-}
-
-
-/* Black transparent box at bottom header */
-
-.content3 {
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0);
-    /* Fallback color */
-    background: rgba(0, 0, 0, 0.4);
-    /* Black background with 0.5 opacity */
-    color: #f1f1f1;
-    width: 100%;
-}
-
-
-/* Header test */
-
-.container2 {
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-image: url("img/bannerbg2.png");
-    min-height: 100%;
-}
-
-
-/* Header for services */
-
-.container .content2 {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 20px 20px 20px 40px;
-}
-
-
-/* Service links for services */
-
-.serlinks a #hovlinks:hover {
-    filter: opacity(1);
-    transition: 0.3s;
-}
-
 .container .small-content {
     position: absolute;
     bottom: 0;
@@ -336,9 +241,92 @@ h4 {
     padding: 10px 30px;
 }
 
+
+/* New version - with black transparent box at bottom of image header */
+
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("img/childcare.jpg");
+    min-height: 100%;
+}
+
+.ndis-logo {
+    height: 120px;
+    width: 120px;
+}
+
+.trans-box {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.4);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+}
+
+
+/* Button links in CW brown font */
+
+.cw-button {
+    background-color: #983222;
+    opacity: 0.7;
+    border: none;
+    color: white;
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.cw-button:hover {
+    background-color: #983222;
+    color: white;
+    border: none;
+    opacity: 1;
+}
+
+
+/* Old version - Header Image for ALL other Tabs */
+
+.container2 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-image: url("img/bannerbg2.png");
+    min-height: 100%;
+}
+
+.container .content2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 20px 20px 40px;
+}
+
+
+/* Links for Services page */
+
+.serv-links a #hovlinks:hover {
+    filter: opacity(1);
+    transition: 0.3s;
+}
+
+
+/* Grey containers */
+
 #grey-container {
     background-color: #E9E8E8;
 }
+
+
+/* Lists style */
 
 ul {
     list-style: disc outside none;
@@ -390,7 +378,7 @@ ul {
 }
 
 
-/* Accordion for Referral page */
+/* Accordion style for Referral page */
 
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -445,7 +433,7 @@ ul {
 }
 
 
-/* format the input boxes */
+/* Format the input boxes on forms */
 
 input[type=text],
 [type=email],
@@ -467,7 +455,7 @@ label {
 }
 
 
-/* Submit button */
+/* Submit button on forms */
 
 input[type=submit] {
     background-color: #983222;
@@ -488,7 +476,7 @@ input[type=submit]:hover {
 }
 
 
-/* Footer-top (hover) */
+/* Footer #2 */
 
 .underhov a {
     color: white;
