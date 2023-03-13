@@ -259,6 +259,35 @@ h4 {
 }
 
 
+/* Header test */
+
+.bgimg-2 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("img/childcare.jpg");
+    min-height: 100%;
+}
+
+.ndis-test {
+    height: 120px;
+    width: 120px;
+}
+
+
+/* Black transparent box at bottom header */
+
+.content3 {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.4);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+}
+
+
 /* Header for services */
 
 .container .content2 {
