@@ -19,7 +19,7 @@
     <!-- Navigation bar -->
     <div class="w3-top">
         <!-- Nav bar #1 stays at the top -->
-        <div class="topnav w3-hide-small w3-bar w3-card;">
+        <div class="topnav w3-hide-small w3-bar;">
             <a href="https://www.facebook.com/CameronWellnessCentre/" class="w3-bar-item w3-button;" target="_blank"><i class="fa fa-facebook-official"></i></a>
             <a href="https://www.instagram.com/cameronwellnesscentre/" class="w3-bar-item w3-button;" target="_blank"><i class="fa fa-instagram"></i></a>
             <a href="https://www.linkedin.com/company/cameronwellnesscentre/?original_referer=" class="w3-bar-item w3-button;" target="_blank"><i class="fa fa-linkedin"></i></a>
@@ -31,7 +31,7 @@
         <div class="w3-bar w3-white w3-card " id="myNavbar">
             <div class="navbar-left">
                 <a href="index.html" class="w3-bar-item">
-                    <img id="logo" src="img/logo.png" alt="img" style="max-width: 260px; max-height: 300px;"></img>
+                    <img id="logo" src="img/logo.png" alt="CW Logo" style="max-width: 260px; max-height: 300px;"></img>
                 </a>
             </div>
             <!-- Links on RHS -->
@@ -45,7 +45,7 @@
 
 
             <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-            <a href="javascript:void(0)" class="w3-bar-item  w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <a href="javascript:void(0)" class="w3-bar-item  w3-right w3-hide-large " onclick="w3_open()">
                 <i class="fa fa-bars" style="font-size: 20px; padding-top: 45px;"> Menu</i>
             </a>
 
@@ -114,7 +114,7 @@
 
     <!-- CW Logo Header -->
     <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;">
-        <img class="w3-image" src="img/bannerbg2.png" alt="CW-Logo" width="1500px" height="800px">
+        <img class="w3-image" src="img/bannerbg2.png" alt="CW Logo" width="1500px" height="800px">
         <div class="w3-display-left w3-margin-top w3-center">
             <span class="w3-jumbo w3-hide-small w3-hide-medium" style="color:#5E3032; padding:48px"><strong>Services</strong></span>
             <span class="w3-xxlarge w3-hide-large" style="color:#5E3032; padding:20px"><strong>Services</strong></span>
@@ -123,17 +123,17 @@
     </header>
 
     <!-- Container (Services Section with links) -->
-    <div class="w3-content w3-container w3-row  w3-padding-64" id="about">
+    <div class="w3-content w3-container w3-row  w3-padding-64">
         <div class="w3-full w3-left-align">
             <p>Through our transparent approach and clinical fortitude, we aim to make a real difference in the lives of all Australians by offering a multi-disciplinary approach in Occupational Therapy, Early Childhood Early Intervention & Speech Pathology.</p>
         </div>
         <div class="serv-links w3-center w3-third m6 w3-padding-64 ">
             <a href="#ot">
-                <img id="hovlinks" src="img/ot.png" alt="OT" style="filter: opacity(0.4);" width="100px" height="100px">
+                <img class="w3-hover-opacity" src="img/ot.png" alt="OT" style="filter: opacity(0.4);" width="100px" height="100px">
             </a>
         </div>
         <div class="serv-links w3-center w3-third m6 w3-padding-64">
-            <a href="#earlychild">
+            <a href="#ecei">
                 <img src="img/ecei.png" alt="ECEI" style="filter: opacity(0.4);" width="160px" height="100px">
             </a>
         </div>
@@ -149,7 +149,7 @@
     <!-- Container (Occupational Therapy) -->
     <div class="w3-content w3-row w3-padding-24" id="grey-container">
         <div id="ot" class="w3-half w3-padding-large">
-            <img src="img/occtherapy.png" class="w3-round w3-image" alt="Sensory Room" width="600" height="350">
+            <img src="img/occtherapy.png" class="w3-round w3-image" alt="Occupational Therapy" width="600" height="350">
         </div>
         <div class="w3-half w3-left w3-padding-large">
             <h3>Occupational Therapy</h3>
@@ -159,9 +159,9 @@
     </div>
 
     <!-- Container (Early Childhood) -->
-    <div class="w3-content  w3-row  w3-padding-24" style="background-color: white;" id="grey-container ">
-        <div id="earlychild" class="w3-half w3-padding-large">
-            <img src="img/earlychild.png" class="w3-round w3-image " alt="Sensory Room" width="600" height="350">
+    <div class="w3-content  w3-row  w3-padding-24 w3-white">
+        <div id="ecei" class="w3-half w3-padding-large">
+            <img src="img/earlychild.png" class="w3-round w3-image " alt="Early Childhood" width="600" height="350">
         </div>
         <div class="w3-half w3-left w3-padding-large">
             <h3>Early Childhood Early Intervention</h3>
@@ -174,7 +174,7 @@
     <!-- Container (Speech Pathology) -->
     <div class="w3-content w3-row w3-padding-24" id="grey-container">
         <div id="sp" class="w3-half w3-padding-large">
-            <img src="img/speechpath.png" class="w3-round w3-image" alt="Sensory Room" width="600" height="350">
+            <img src="img/speechpath.png" class="w3-round w3-image" alt="Speech Pathology" width="600" height="350">
         </div>
         <div class="w3-half w3-left w3-padding-large">
             <h3>Speech Pathology</h3>
@@ -199,7 +199,7 @@
     <footer class="w3-row" id="contactus">
         <div class="w3-half w3-light-grey w3-container" style="height:600px;">
             <div class="w3-padding-32;" style="padding-left:20px">
-                <img id="logo" src="img/logo.png" alt="img" style="max-width: 260px; max-height: 300px;">
+                <img id="logo" src="img/logo.png" alt="CW Logo" style="max-width: 260px; max-height: 300px;">
                 <h5>CALL US</h5>
                 <h4 style="color:#5E3032">1800 000 292</h4>
                 <br>
@@ -214,8 +214,8 @@
             </div>
         </div>
         <div class="w3-half w3-light-grey w3-container" style="height:600px">
-            <div class="w3-padding-16" style="padding-right:20px">
-                <h3 style="font-weight:bold;">Get In Touch</h3>
+            <div class="w3-padding-16">
+                <h3 style="font-weight:bold; padding-left: 16px;">Get In Touch</h3>
                 <form class="w3-container w3-padding-80 " action="/action_page.php" target="_blank">
                     <div class="w3-section">
                         <label for="name">Name</label>
@@ -238,10 +238,10 @@
     <footer class="w3-row" id="bot-footer">
         <div class="w3-third w3-center w3-black w3-container" style="height:180px;">
             <div class="w3-padding-64;" style="padding:20px">
-                <img src="img/ndis3.png" alt="img" style="max-width: 80px; max-height: 80px;">
-                <img src="img/Kinaway-Certified-Logo.png" alt="location" style="max-width:80px; max-height: 80px;">
-                <img src="img/aboriginalFlag.png" alt="location" style="max-width:80px; max-height:80px;">
-                <img src="img/torresstraitFlag.png" alt="location" style="max-width:80px; max-height: 80px;">
+                <img src="img/ndis3.png" alt="NDIS Logo" style="max-width: 80px; max-height: 80px;">
+                <img src="img/Kinaway-Certified-Logo.png" alt="Kinaway" style="max-width:80px; max-height: 80px;">
+                <img src="img/aboriginalFlag.png" alt="Aboriginal Flag" style="max-width:80px; max-height:80px;">
+                <img src="img/torresstraitFlag.png" alt="Torres Strait Flag" style="max-width:80px; max-height: 80px;">
 
             </div>
         </div>
