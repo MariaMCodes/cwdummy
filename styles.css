@@ -288,6 +288,17 @@ h4 {
 }
 
 
+/* Header test */
+
+.container2 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-image: url("img/bannerbg2.png");
+    min-height: 100%;
+}
+
+
 /* Header for services */
 
 .container .content2 {
