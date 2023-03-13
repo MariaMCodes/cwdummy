@@ -16,27 +16,27 @@
 </head>
 
 <body>
-    <!-- Nav bar -->
+    <!-- Navigation bar -->
     <div class="w3-top">
-        <!-- Nav bar stays at the top -->
-        <div class="topnav w3-hide-small w3-bar;">
+        <!-- Nav bar #1 stays at the top -->
+        <div class="topnav w3-hide-small w3-bar w3-card;">
             <a href="https://www.facebook.com/CameronWellnessCentre/" class="w3-bar-item w3-button;" target="_blank"><i class="fa fa-facebook-official"></i></a>
             <a href="https://www.instagram.com/cameronwellnesscentre/" class="w3-bar-item w3-button;" target="_blank"><i class="fa fa-instagram"></i></a>
             <a href="https://www.linkedin.com/company/cameronwellnesscentre/?original_referer=" class="w3-bar-item w3-button;" target="_blank"><i class="fa fa-linkedin"></i></a>
             <a href="https://www.google.com/maps/dir/-33.8460672,150.9883904/cameron+wellness+centre/@-35.9062919,143.2872305,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x6ad415abe45d329b:0x8a4de8d4b5d30a08!2m2!1d144.3641724!2d-38.1497819" target="_blank"><i class="fa fa-map-marker" ></i>    GETTING TO THE CENTRE</a>
             <a href="#phone"><i class="fa fa-phone-square"></i>    02 1234 5678</a>
         </div>
-        <!-- Nav bar (sit on top) -->
+        <!-- Nav bar #2 stays at the top -->
         <!-- CW Logo -->
-        <div class="w3-bar w3-white w3-card w3-xlarge" id="myNavbar">
+        <div class="w3-bar w3-white w3-card " id="myNavbar">
             <div class="navbar-left">
                 <a href="index.html" class="w3-bar-item">
                     <img id="logo" src="img/logo.png" alt="img" style="max-width: 260px; max-height: 300px;"></img>
                 </a>
             </div>
-            <!-- Nav bar Right Links -->
+            <!-- Links on RHS -->
             <div class="navbar-right w3-hide-small w3-hide-medium w3-right">
-                <a href="index.html" class="w3-bar-item w3-button">Home</a>
+                <a href="index.html" class="w3-bar-item w3-button ">Home</a>
                 <a href="services.html" class="w3-bar-item w3-button">Services</a>
                 <a href="story.html" class="w3-bar-item w3-button"></i>Our Story</a>
                 <a href="contact.html" class="w3-bar-item w3-button"></i>Contact Us</a>
@@ -45,12 +45,13 @@
 
 
             <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-            <a href="javascript:void(0)" class="navbar-right w3-bar-item w3-right w3-hide-large " onclick="w3_open()">
+            <a href="javascript:void(0)" class="w3-bar-item  w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
                 <i class="fa fa-bars" style="font-size: 20px; padding-top: 45px;"> Menu</i>
             </a>
+
+
         </div>
     </div>
-
     <!-- Nav bar (sit on top) - ALTERNATE METHOD 
        ******************************************************************************
             CW Logo 
@@ -84,14 +85,13 @@
     <!-- Sidebar on small screens when clicking the menu icon -->
     <!-- display:none means side bar is hidden by default -->
     <nav id="mySidebar" class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-large" style="display:none">
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16 fa fa-remove w3-right">   Close <!--&times;--></a>
         <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
         <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button">Services</a>
         <a href="story.html" onclick="w3_close()" class="w3-bar-item w3-button">Our Story</a>
         <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
         <a href="referral.html" onclick="w3_close()" class="w3-bar-item w3-button">Make a Referral</a>
     </nav>
-
 
 
 
@@ -112,31 +112,32 @@
 
     </header>-->
 
-    <!-- Header with full-height image - Responsive Image with Transparent Text -->
-    <header class="container">
+    <!-- CW Logo Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;">
+        <img class="w3-image" src="img/bannerbg2.png" alt="CW-Logo" width="1500px" height="800px">
+        <div class="w3-display-left w3-margin-top w3-center">
+            <span class="w3-jumbo w3-hide-small w3-hide-medium" style="color:#5E3032; padding:48px"><strong>Services</strong></span>
+            <span class="w3-xxlarge w3-hide-large" style="color:#5E3032; padding:20px"><strong>Services</strong></span>
 
-        <img src="img/bannerbg.png" alt="CW Background" style="width:100%;">
-        <div class="content2">
-            <p class="w3-text-black " style="font-size: 4vw; font-weight: bold;">Our Services</p>
         </div>
     </header>
 
     <!-- Container (Services Section with links) -->
-    <div class="w3-content w3-row  w3-padding-64" id="about">
+    <div class="w3-content w3-container w3-row  w3-padding-64" id="about">
         <div class="w3-full w3-left-align">
             <p>Through our transparent approach and clinical fortitude, we aim to make a real difference in the lives of all Australians by offering a multi-disciplinary approach in Occupational Therapy, Early Childhood Early Intervention & Speech Pathology.</p>
         </div>
-        <div class="serlinks w3-center w3-third m6 w3-padding-64 ">
+        <div class="serv-links w3-center w3-third m6 w3-padding-64 ">
             <a href="#ot">
                 <img id="hovlinks" src="img/ot.png" alt="OT" style="filter: opacity(0.4);" width="100px" height="100px">
             </a>
         </div>
-        <div class="serlinks w3-center w3-third m6 w3-padding-64">
+        <div class="serv-links w3-center w3-third m6 w3-padding-64">
             <a href="#earlychild">
                 <img src="img/ecei.png" alt="ECEI" style="filter: opacity(0.4);" width="160px" height="100px">
             </a>
         </div>
-        <div class="serlinks w3-center w3-third m6 w3-padding-64">
+        <div class="serv-links w3-center w3-third m6 w3-padding-64">
             <a href="#sp">
                 <img src="img/sp.png" alt="SP" style="filter: opacity(0.4);" width="100px" height="100px">
             </a>
@@ -182,7 +183,7 @@
                 difficulties swallowing food and drink safely can also be helped by a speech pathologist.</p>
         </div>
     </div>
-    <!-- Add space below speech pathology -->
+    <!-- Add space -->
     <div class="w3-content w3-row w3-padding-32">
 
     </div>
@@ -194,7 +195,7 @@
 
 
 
-    <!-- Footer (top) - Contact Us -->
+    <!-- Footer #1 -->
     <footer class="w3-row" id="contactus">
         <div class="w3-half w3-light-grey w3-container" style="height:600px;">
             <div class="w3-padding-32;" style="padding-left:20px">
@@ -233,7 +234,7 @@
             </div>
         </div>
     </footer>
-    <!-- Footer (bottom) -->
+    <!-- Footer #2 -->
     <footer class="w3-row" id="bot-footer">
         <div class="w3-third w3-center w3-black w3-container" style="height:180px;">
             <div class="w3-padding-64;" style="padding:20px">
@@ -260,7 +261,7 @@
         </div>
     </footer>
 
-    <!-- Footer (bottom) -->
+    <!-- Footer #3 -->
     <footer class="w3-container w3-card w3-center w3-black w3-border-top">
 
         <p class="w3-medium">Copyright <i class="fa fa-copyright "></i> 2023 Cameron Wellness Centre. All rights reserved.</a>
