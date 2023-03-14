@@ -338,6 +338,33 @@ a {
 }
 
 
+/* staff-container om our story */
+
+.back {
+    position: relative;
+    /*width: 100%;
+    height: 100%;*/
+    box-shadow: 10px 10px 0 #DF7A00, -10px -10px 0 #5E3032;
+    border-radius: 50%;
+    animation: rotate 4s infinite linear;
+}
+
+.profile {
+    border-radius: 50%;
+    /* width: 100%;
+    height: 100%;*/
+    background-size: 100%;
+    background-position: center;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.profile:hover {
+    background-size: 110%;
+    box-shadow: 10px 10px 0 #5E3032, -10px -10px 0 #DF7A00;
+}
+
+
 /* Lists style */
 
 ul {
