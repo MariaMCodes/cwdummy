@@ -331,14 +331,6 @@ a {
 }
 
 
-/* Links for Services page */
-
-.serv-links a #hovlinks:hover {
-    filter: opacity(1);
-    transition: 0.3s;
-}
-
-
 /* Grey containers */
 
 #grey-container {
