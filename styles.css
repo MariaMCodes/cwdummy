@@ -42,8 +42,8 @@ a {
 .modal {
     position: fixed;
     /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
+    z-index: 2;
+    /* z-index of 1 - Sit on top of webpage, 2 - also sits on top but can seen black opacity background */
     padding-top: 180px;
     /* Location of the box */
     left: 0;
@@ -69,7 +69,7 @@ a {
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 80%;
+    width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -106,7 +106,7 @@ a {
 /* The Close Button */
 
 .close {
-    color: white;
+    color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -121,17 +121,19 @@ a {
 
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: white;
     color: white;
 }
 
 .modal-body {
-    padding: 2px 16px;
+    padding: 80px;
+    text-align: center;
+    font-size: 26px;
 }
 
 .modal-footer {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: white;
     color: white;
 }
 
