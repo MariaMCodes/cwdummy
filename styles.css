@@ -22,6 +22,10 @@ h4 {
     font-weight: bolder;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* CW brown font */
 
@@ -265,6 +269,22 @@ h4 {
     /* Black background with 0.5 opacity */
     color: #f1f1f1;
     width: 100%;
+}
+
+
+/* en-button on top nav #1 */
+
+.en-button {
+    background-color: #5E3032;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 26px;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 
