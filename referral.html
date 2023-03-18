@@ -301,6 +301,44 @@
                 <label for="appt-time">Preferred Appointment Times</label>
                 <textarea id="appt-time" name="appt-time" style="height:50px; width: 100%;"></textarea>
             </div>
+            <p style="color:#983222"><strong>NDIS PLAN</strong></p>
+            <div class="w3-row w3-padding-16">
+
+                <label for="fundshrs">Available Funds/Hours</label>
+                <input type="text" id="fundshrs" name="fundshrs">
+            </div>
+            <div class="w3-row w3-padding-16">
+                <label for="ndisplanmanaged">How is the Participant's NDIS plan managed?</label>
+                <select id="ndis-plan-managed" name="ndis-plan-managed">
+                        <option value="select">Please Select</option>
+                        <option value="plan-managed">Plan Managed</option>
+                        <option value="self-managed">Self-Managed</option>
+                        <option value="ndia-managed">NDIA Managed</option>
+                        
+                    </select>
+            </div>
+
+            <div class="w3-row w3-padding-16">
+                <div class="w3-half">
+                    <label for="ndisstart">NDIS Plan Start Date</label>
+                    <input type="date" id="ndis-start" name="ndis-start">
+                </div>
+                <div class="w3-half">
+                    <label for="ndisend">NDIS Plan End Date</label>
+                    <input type="date" id="ndis-end" name="ndis-end">
+                </div>
+            </div>
+
+            <div id="show-plan-managed" class="w3-row w3-padding-16" style="display:none">
+                <div class="w3-half">
+                    <label for="planmngr">Plan Manager's Name</label>
+                    <input type="text" id="plan-mngr" name="plan-mngr">
+                </div>
+                <div class="w3-half">
+                    <label for="planmngremail">Plan Manager's Email</label>
+                    <input type="email" id="plan-mngr-email" name="plan-mngr-email">
+                </div>
+            </div>
 
             <div class="w3-row w3-padding-16">
                 <label for="vax-status">Are you fully vaccinated?</label>
@@ -327,6 +365,14 @@
                             <option value="other">Other</option>
                         </select>
             </div>
+
+            <div>
+                <p><strong>Please upload any relevant supporting documents i.e., NDIS plan, previous assessments, medical history</strong></p>
+                <input type="file" id="file-uploader" multiple>
+
+                <p id="feedback"></p>
+            </div>
+
             <div class="w3-row w3-padding-16">
                 <input type="submit" value="Submit">
             </div>
@@ -813,6 +859,28 @@
                 }
             });
         }
+
+        // Upload multiple files 
+        const fileUploader = document.getElementById('file-uploader');
+
+        fileUploader.addEventListener('change', (event) => {
+            const files = event.target.files;
+            console.log('files', files);
+
+            // show the upload feedback
+            const feedback = document.getElementById('feedback');
+            const msg = `${files.length} file(s) uploaded successfully!`;
+            feedback.innerHTML = msg;
+        });
+
+
+        // Select Change Show/Hide Div from https://codepen.io/lindstrom/pen/GqMYEQ
+        $("#ndis-plan-managed").on('change', function() {
+            $("#show-plan-managed").css('display', 'none');
+            if ($(this).val() === "plan-managed") {
+                $("#show-plan-managed").css('display', 'block');
+            }
+        });
     </script>
 </body>
 
