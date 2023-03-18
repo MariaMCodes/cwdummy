@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <!--<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>-->
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
@@ -311,7 +311,7 @@
                 <label for="ndisplanmanaged">How is the Participant's NDIS plan managed?</label>
                 <select id="ndis-plan-managed" name="ndis-plan-managed">
                         <option value="select">Please Select</option>
-                        <option value="plan-managed">Plan Managed</option>
+                        <option id="pm" value="plan-managed">Plan Managed</option>
                         <option value="self-managed">Self-Managed</option>
                         <option value="ndia-managed">NDIA Managed</option>
                         
@@ -860,7 +860,7 @@
             });
         }
 
-        // Upload multiple files 
+        // Upload multiple files from https://codepen.io/atapas/pen/MWeamYp
         const fileUploader = document.getElementById('file-uploader');
 
         fileUploader.addEventListener('change', (event) => {
@@ -881,6 +881,17 @@
                 $("#show-plan-managed").css('display', 'block');
             }
         });
+
+        // Show/Hide div when option selected from https://codepen.io/whodaman/pen/zBObMB
+        //  $(function() {
+        //     $("#ndis-plan-managed").change(function() {
+        //         if ($("#pm").is(":selected")) {
+        //            $("#show-plan-managed").show();
+        //        } else {
+        //            $(".moreInfoShow").hide();
+        //        }
+        //     }).trigger('change');
+        //  });
     </script>
 </body>
 
